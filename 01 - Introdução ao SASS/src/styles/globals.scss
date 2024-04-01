@@ -8,6 +8,10 @@
   --color-blue-600: #0c0eff;
   --color-blue-900: #10169f;
   --color-blue-950: #0a0b5c;
+
+  --color-success: #004601;
+  --color-warning: #c61313;
+
   /* GRAY SCALE */
   --gray-100: #000000;
   --gray-200: #2e2e2e;
@@ -26,4 +30,10 @@ body {
   color: var(--color-blue-950);
   color: var(--gray-100);
   font-family: var(--font-family-primary);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 1rem auto;
+  padding-inline: 0.5rem;
 }
