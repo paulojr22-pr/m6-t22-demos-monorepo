@@ -45,7 +45,7 @@ export const ProductSection = () => {
                 </p>
 
                 <small className="text sm">
-                  em até 12x de{" "}
+                  em até 12x de
                   <strong>
                     <span>R$ 17,65</span>
                   </strong>
