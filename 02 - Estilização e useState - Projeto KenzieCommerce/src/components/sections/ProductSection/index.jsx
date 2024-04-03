@@ -4,7 +4,8 @@ import styles from "./styles.module.scss";
 
 /*
   DESAFIO:
-  -> Alinhar todos os cards verticalmente
+  -> Utilizar a API https://hardware-fake-api.onrender.com/api/hardwares para trazer
+  os dados dos produtos
 */
 
 export const ProductSection = ({ addToBag }) => {
