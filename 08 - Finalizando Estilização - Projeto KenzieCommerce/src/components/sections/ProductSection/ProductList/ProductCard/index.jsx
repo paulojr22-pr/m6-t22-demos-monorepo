@@ -37,7 +37,7 @@ export const ProductCard = ({ addToBag, product }) => {
         <small className="text sm">
           em até 12x de
           <strong>
-            <span>R$ 17,65</span>
+            <span> R$ 17,65</span>
           </strong>
         </small>
 
