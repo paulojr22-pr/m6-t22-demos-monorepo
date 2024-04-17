@@ -1,0 +1,58 @@
+.bagCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  > figure img {
+    width: 200px;
+    object-fit: cover;
+  }
+}
+
+.bagItemDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // align-items: flex-start;
+  gap: 0.8rem;
+
+  > p {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  button {
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    > svg {
+      fill: var(--color-blue-900);
+    }
+  }
+}
+
+.itemQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  > div {
+    display: flex;
+    gap: 1rem;
+  }
+}
