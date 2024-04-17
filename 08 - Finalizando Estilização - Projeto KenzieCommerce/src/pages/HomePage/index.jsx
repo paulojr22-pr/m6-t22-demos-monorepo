@@ -67,7 +67,8 @@ export const HomePage = () => {
         />
       ) : null}
       <Header bagItemsCount={bagItems.length} setIsModalOpen={setIsModalOpen} />
-      <main className="container">
+
+      <main>
         <ProductSection addToBag={addToBag} />
       </main>
     </>

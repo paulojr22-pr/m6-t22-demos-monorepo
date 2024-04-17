@@ -1,11 +1,12 @@
 .bagCard {
-  display: flex;
+  // ALINHANDO PROBLEMA DE FLICKERING
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
 
   > figure img {
-    width: 200px;
+    max-width: 100px;
     object-fit: cover;
   }
 }
@@ -15,7 +16,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // align-items: flex-start;
   gap: 0.8rem;
 
   > p {
@@ -23,14 +23,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 1;
     overflow: hidden;
-  }
-
-  > div {
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-    justify-content: center;
-    gap: 1rem;
   }
 
   button {
@@ -46,13 +38,24 @@
 }
 
 .itemQuantity {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // align-self: flex-start;
+  // justify-content: center;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  align-self: flex-start;
   justify-content: center;
   gap: 1rem;
 
-  > div {
+  > button {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > span {
+    grid-column: 3;
+    text-align: center;
   }
 }

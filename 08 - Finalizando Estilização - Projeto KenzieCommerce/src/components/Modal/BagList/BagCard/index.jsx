@@ -13,18 +13,18 @@ export const BagCard = ({ bagItem, removeFromBag, addToBag }) => {
 
         <div className={styles.itemQuantity}>
           <p className="text sm">Quantidade:</p>
-          <div>
-            <button
-              disabled={bagItem.quantity === 1}
-              onClick={() => removeFromBag(bagItem.id)}
-            >
-              <FaChevronLeft />
-            </button>
-            <span>{bagItem.quantity}</span>
-            <button onClick={() => addToBag(bagItem)}>
-              <FaChevronRight />
-            </button>
-          </div>
+          <button
+            disabled={bagItem.quantity === 1}
+            onClick={() => removeFromBag(bagItem.id)}
+          >
+            <FaChevronLeft />
+          </button>
+          <span className="text">
+            <strong>{bagItem.quantity}</strong>
+          </span>
+          <button onClick={() => addToBag(bagItem)}>
+            <FaChevronRight />
+          </button>
         </div>
       </div>
 

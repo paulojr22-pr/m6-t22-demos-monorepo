@@ -1,19 +1,15 @@
 import styles from "./styles.module.scss";
 import { ProductList } from "./ProductList";
 
-/*
-  DESAFIO:
-  -> Utilizar a API https://hardware-fake-api.onrender.com/api/hardwares para trazer
-  os dados dos produtos
-*/
-
 export const ProductSection = ({ addToBag }) => {
   // console.log("componente ProductSection remontado!");
   return (
     <section className={styles.productSection}>
-      <h2 className="title two">Produtos em Destaque</h2>
+      <div className="container">
+        <h2 className="title two">Produtos em Destaque</h2>
 
-      <ProductList addToBag={addToBag} />
+        <ProductList addToBag={addToBag} />
+      </div>
     </section>
   );
 };
