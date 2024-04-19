@@ -1,0 +1,19 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--gray-500);
+  border-radius: 50%;
+  border-top-color: var(--color-blue-900);
+  animation: girar 1s ease-in-out infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}

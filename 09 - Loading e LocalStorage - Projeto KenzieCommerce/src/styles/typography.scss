@@ -1,0 +1,53 @@
+.title {
+  font-weight: 700;
+  font-family: var(--font-family-primary);
+
+  // NESTING
+  &.one {
+    // font-size: 3rem;
+    font-size: clamp(2rem, 1.586rem + 1.656vw, 3rem);
+    font-family: var(--font-family-secondary);
+  }
+
+  &.two {
+    // font-size: 1.75rem;
+    font-size: clamp(1.2rem, 0.972rem + 0.911vw, 1.75rem);
+  }
+
+  &.three {
+    // font-size: 1.125rem;
+    font-size: clamp(0.875rem, 0.771rem + 0.414vw, 1.125rem);
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: var(--font-family-primary);
+
+  strong {
+    font-weight: 700;
+  }
+
+  &.sm {
+    font-size: 0.75rem;
+  }
+
+  &.md {
+    // font-size: 1.125rem;
+    font-size: clamp(0.875rem, 0.771rem + 0.414vw, 1.125rem);
+  }
+
+  &.lg {
+    // font-size: 1.5rem;
+    font-size: clamp(1rem, 0.793rem + 0.828vw, 1.5rem);
+  }
+
+  &.green {
+    color: var(--color-green-100);
+  }
+
+  &.red {
+    color: var(--color-red-100);
+  }
+}
